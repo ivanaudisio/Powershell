@@ -1,0 +1,12 @@
+function getFiles ($folderPath) {
+    $dir = Get-ChildItem $folderPath
+    return $dir
+}
+
+$filesPath = ""                       //Provide folder path where files are located
+$files = getFiles($filesPath)
+
+foreach ($file in $files) {
+    $path = $file.FullName
+    $name = $file.Name
+}
