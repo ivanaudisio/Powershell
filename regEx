@@ -1,0 +1,11 @@
+$string = "this is a string"
+$search = "is"
+$regEx = $search + "\.[a-zA-Z0-9]+"
+
+// Get all alphanumerical characters after a certain word defined in $search
+
+$string -match $regEx
+
+// All results are stored under $Matches
+$Matches.name
+$Matches.value
