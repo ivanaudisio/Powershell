@@ -1,0 +1,9 @@
+$usa_states=@{ 
+  "CA"="California";
+  "NY" = "New York";
+  "IL" = "Illinois";
+  "NH" = "New Hampshire"
+}
+
+$usa_states.Add("GA", "Goregia")      // Add item
+$usa_states.Set_Item("GA", "Georgia") // Set item
