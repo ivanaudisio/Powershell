@@ -1,6 +1,6 @@
 function getFiles ($folderPath) {
-    $dir = Get-ChildItem $folderPath
-    return $dir
+    $allFiles = Get-ChildItem $folderPath
+    return $allFiles
 }
 
 $filesPath = ""                       //Provide folder path where files are located
