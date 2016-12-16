@@ -11,4 +11,5 @@ $usa_states.Remove("GA")                        // Remove item
 $usa_states.Get_Item("GA")                      // Get Value for specified Key
 $usa_states.ContainsKey("GA")                   // Returns True/False
 $usa_states.ContainsValue("New Jersey")         // Returns True/False
+$usa_states.GetEnumerator() | Sort name         // Sort items by name
 $usa_states | out-string | add-content log.txt  // Print tables in a txt file
