@@ -7,6 +7,7 @@ $usa_states=@{
 
 $usa_states.Add("GA", "Goregia")        // Add item
 $usa_states.Set_Item("GA", "Georgia")   // Set item
+$usa_states.Remove("GA")                // Remove item
 $usa_states.Get_Item("GA")              // Get Value for specified Key
 $usa_states.ContainsKey("GA")           // Returns True/False
 $usa_states.ContainsValue("New Jersey") // Returns True/False
