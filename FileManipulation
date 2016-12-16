@@ -9,6 +9,8 @@
 
 Add-Content c:\scripts\test.txt "`nThe End"   # Write to a file or append to a file. The file will be created if it does not exist
 
+Get-Content C:\Scripts\Test.txt               # Get content from a file
+
 Clear-Content c:\scripts\test.txt             # Clear all content from a file
 
 Remove-Item c:\scripts\test.txt               # Remove file. Another example: Remove-Item c:\scripts\*
