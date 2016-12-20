@@ -1,11 +1,10 @@
-$string = "this is a string"
-$search = "is"
-$regEx = $search + "\.[a-zA-Z0-9]+"
+$string = "abc45s"
+$search = [regex]'[a-z]'
+$i = 0
 
-// Get all alphanumerical characters after a certain word defined in $search
+#$matches = ([regex]'[a-z]').Matches('abc45s');
+$matches = $search.Matches($string);
 
-$string -match $regEx
-
-// All results are stored under $Matches
-$Matches.name
-$Matches.value
+foreach ($match in $matches){
+    $match.Value
+}
