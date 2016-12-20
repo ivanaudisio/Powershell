@@ -8,3 +8,11 @@ $matches = $search.Matches($string);
 foreach ($match in $matches){
     $match.Value
 }
+
+# Another example going through each line on a file looking for occurrences
+#$search = [regex]'(?:{|}|\bcheckpoint\b|\bnode\b|\btimeout\b|\bparallel\b|\binput\b)'
+#$fileContent = Get-Content C:\Users\ivan.audisio\Desktop\script.txt
+
+#foreach ($line in $fileContent) {
+#    $matches += $search.Matches($line);
+#}
