@@ -14,3 +14,13 @@ $usa_states.ContainsValue("New Jersey")         // Returns True/False
 $usa_states.GetEnumerator() | Sort name         // Sort items by name
 $usa-States | Format-Table -AutoSize            // Expands columns to show all length
 $usa_states | out-string | add-content log.txt  // Print tables in a txt file
+
+
+######################
+# ARRAY OF HASTABLES #
+######################
+
+$ArrayOfHashtables = @{Aplha = 'Bravo'}, @{Charlie = 'Delta'}, @{Echo = 'Foxtrot'}
+$ArrayOfHashtables +  @{Charlie = 'Delta'}
+$ArrayOfHashtables +  @{Charlie = 'Delta'}
+$ArrayOfHashtables +  @{Charlie = 'Delta'}
