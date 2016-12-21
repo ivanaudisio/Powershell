@@ -1,0 +1,6 @@
+$values = @( ("a", "b"), ("c", "d") )
+foreach($value in $values)
+{
+  write-host "Value 0 =" $value[0]
+  write-host "Value 1 =" $value[1]
+}
